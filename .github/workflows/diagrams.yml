@@ -1,0 +1,23 @@
+name: Syntroper Diagrams
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  diagrams:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: hassasif-syntroper/readme-analyzer@main
+        with:
+          token: "static-mode"
+          paths: |
+            README.md
+          rewrite_mode: managed_blocks
+          commit_changes: "true"
