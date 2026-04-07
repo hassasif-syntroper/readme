@@ -16,7 +16,7 @@ jobs:
 
       - uses: hassasif-syntroper/readme-analyzer@main
         with:
-          token: "static-mode"
+          api_url: "https://a292-103-39-83-176.ngrok-free.app"
           paths: |
             README.md
           rewrite_mode: managed_blocks
