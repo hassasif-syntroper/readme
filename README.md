@@ -4,23 +4,26 @@ This repo tests the Syntroper diagram action.
 
 ## Architecture
 
-<!-- syntroper:start -->
-[![Diagram](https://mermaid.ink/img/base64:Z3JhcGggVEQKICBBW1VzZXJdIC0tPiBCW0dpdEh1YiBBY3Rpb25dCiAgQiAtLT4gQ1tTY2FuIE1hcmtkb3duXQogIEMgLS0-IERbQ2Fub25pY2FsaXplXQogIEQgLS0-IEVbSGFzaF0KICBFIC0tPiBGW0dlbmVyYXRlIEltYWdlIFVSTF0KICBGIC0tPiBHW1Jld3JpdGUgUkVBRE1FXQ)](https://mermaid.ink/img/base64:Z3JhcGggVEQKICBBW1VzZXJdIC0tPiBCW0dpdEh1YiBBY3Rpb25dCiAgQiAtLT4gQ1tTY2FuIE1hcmtkb3duXQogIEMgLS0-IERbQ2Fub25pY2FsaXplXQogIEQgLS0-IEVbSGFzaF0KICBFIC0tPiBGW0dlbmVyYXRlIEltYWdlIFVSTF0KICBGIC0tPiBHW1Jld3JpdGUgUkVBRE1FXQ)
-
-Open interactive version on Syntroper.
-Use the Syntroper browser extension for inline interactive mode.
-<!-- syntroper:diagram canonical=fd1d8967b5a02c3f8cd12627579fca627c2f2d20d260f16c55dbe53cff44f259 render=218248937ff321a4a2e13eeb1b855b44334e72469b089dfacf8208fe0c9e3d67 id=fd1d8967b5a02c3f engine=mermaid -->
-<!-- syntroper:end -->
+```mermaid
+graph TD
+  A[User] --> B[GitHub Action]
+  B --> C[Scan Markdown]
+  C --> D[Canonicalize]
+  D --> E[Hash]
+  E --> F[Generate Image URL]
+  F --> G[Rewrite README]
+```
 
 ## Sequence
 
-<!-- syntroper:start -->
-[![Diagram](https://www.plantuml.com/plantuml/svg/~h407374617274756d6c0a416c696365202d3e20476974487562203a205075736820636f6d6d69740a476974487562202d3e20416374696f6e203a205472696767657220776f726b666c6f770a416374696f6e202d3e204d61726b646f776e203a205363616e206469616772616d730a416374696f6e202d3e20524541444d45203a2052657772697465207769746820696d616765730a40656e64756d6c)](https://www.plantuml.com/plantuml/svg/~h407374617274756d6c0a416c696365202d3e20476974487562203a205075736820636f6d6d69740a476974487562202d3e20416374696f6e203a205472696767657220776f726b666c6f770a416374696f6e202d3e204d61726b646f776e203a205363616e206469616772616d730a416374696f6e202d3e20524541444d45203a2052657772697465207769746820696d616765730a40656e64756d6c)
-
-Open interactive version on Syntroper.
-Use the Syntroper browser extension for inline interactive mode.
-<!-- syntroper:diagram canonical=213e159c3650342e5997d535df9a35d7d45e4b7ad0efbb28e5d00a3bdb20a7c0 render=ac4e71b1313a15d8f6129616cfe0e63922f414a5d1b81958ca9182a6b7e5a074 id=213e159c3650342e engine=plantuml -->
-<!-- syntroper:end -->
+```plantuml
+@startuml
+Alice -> GitHub : Push commit
+GitHub -> Action : Trigger workflow
+Action -> Markdown : Scan diagrams
+Action -> README : Rewrite with images
+@enduml
+```
 
 ## Footer
 
