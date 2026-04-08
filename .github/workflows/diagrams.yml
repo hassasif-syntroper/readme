@@ -16,7 +16,7 @@ jobs:
 
       - uses: hassasif-syntroper/readme-analyzer@main
         with:
-          api_url: "https://a292-103-39-83-176.ngrok-free.app"
+          api_url: "https://dev-api.syntroper.ai"
           paths: |
             README.md
           rewrite_mode: managed_blocks

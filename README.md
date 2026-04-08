@@ -1,27 +1,139 @@
-# Readme Analyzer Test
+# Syntroper Diagram Test Suite
 
-This repo tests the Syntroper diagram action.
+This repo tests all supported diagram types and engines.
 
-## Architecture (Flowchart)
+---
 
-<!-- syntroper:start -->
-[![Diagram](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/827e4116-f64a-4271-88f0-3c9a8cb7f0d9.png)](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/827e4116-f64a-4271-88f0-3c9a8cb7f0d9.png)
+<!-- ===================== -->
+<!-- MERMAID: Flowchart     -->
+<!-- ===================== -->
+## 1. Mermaid — Flowchart
 
-Open interactive version on Syntroper.
-Use the Syntroper browser extension for inline interactive mode.
-<!-- syntroper:diagram canonical=62df326855e2383ce13db53c3511214f3e8fc45858c4e709168889ba3c61b1c7 render=8b108cbc7a30d891ecc73333825e34ad420b25b2e22f60010a7323e59b9a94bb id=827e4116-f64a-4271-88f0-3c9a8cb7f0d9 engine=mermaid -->
-<!-- syntroper:end -->
+```mermaid
+graph TD
+  A[User] --> B[GitHub Action]
+  B --> C[Scan Markdown]
+  C --> D[Canonicalize]
+  D --> E[Hash]
+  E --> F[Upload to Syntroper API]
+  F --> G[Rewrite README]
+  G --> H[Commit & Push]
+```
 
-## Workflow (Sequence Diagram)
+---
 
-<!-- syntroper:start -->
-[![Diagram](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/f202995d-6815-4747-bee1-8d154d6c80cf.png)](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/f202995d-6815-4747-bee1-8d154d6c80cf.png)
+<!-- ===================== -->
+<!-- MERMAID: Sequence      -->
+<!-- ===================== -->
+## 2. Mermaid — Sequence Diagram
 
-Open interactive version on Syntroper.
-Use the Syntroper browser extension for inline interactive mode.
-<!-- syntroper:diagram canonical=a3ab9e83ef7bbd1c3177e15e8ecda354bfdd76c6c3a9a6060c246f9c3a0d60ae render=8d68f2e61df7fe82abbd8684f497469b9991c49e64f961f1ec1dd671b338b6cb id=f202995d-6815-4747-bee1-8d154d6c80cf engine=mermaid -->
-<!-- syntroper:end -->
+```mermaid
+sequenceDiagram
+    User->>GitHub: Push commit
+    GitHub->>Action: Trigger workflow
+    Action->>Syntroper: Upload diagram source
+    Syntroper-->>Action: Return image URL
+    Action->>README: Rewrite with image
+    Action->>Git: Commit & push
+```
 
-## Footer
+---
 
-That's it!
+<!-- ===================== -->
+<!-- MERMAID: General/Other -->
+<!-- ===================== -->
+## 3. Mermaid — Class Diagram (General)
+
+```mermaid
+classDiagram
+    cl# Syntroper Diagram Test Suitsc
+This repo tests all supporte   
+---
+
+<!-- ===================== -->
+<!-- MERMAID: Flow
+    cla<!-- MERMAID: Flowchart     -po<!-- =============  +getImageUrl## 1   }
+    DiagramAction --> 
+```mermaid
+graph TD
+  A[U---graph TD
+==  A[Use==  B --> C[Scan MarPLANTUML: Sequence     -->
+<!-- ======  D --> E[Hash]
+  E -- 4  E --> F[Uplo S  F --> G[Rewrite README]
+  G -->rt  G --> H[Commit & Push]sh```
+
+---
+
+<!-- ========n 
+-Tri
+ger workflow
+Action -> Syntroper : <!-- ===================== -->ct## 2. Mermaid — Sequence Di -
+```mermaid
+sequenceDiagram
+    Udumsequenc---
+    User->>Git==    GitHub->>Action: Trigger  (    Action-  -->
+<!-- ================    Syntroper-->>Action: Return image URLase D    Action->>README: Rewrite with image
+ t    Action->>Git: Commit & push
+```
+
+-el```
+
+---
+
+<!-- ===============em
+-{
+ 
+< us<!-- MERMAID: General/Other -us<!-- ===================== -->  ## 3. Mermaid — Class Diagr3
+
+```mermaid
+classDiagram
+    cl4
+}
+User --> UC4
+Develo    cl# Syn
+UThis repo tests all supporte   
+---
+en---
+
+<!-- ======================
+<===<!-- MERMAID: Flow
+    cla<!-      cla<!-- MERMA==    DiagramAction --> 
+```meASCII — Architecture Overview
+
+```ascii
++--------```mermaid
+graph TD
+ --graph TD
+--  A[U--  ==  A[Use==  B --<!-- ======  D --> E[Hash]
+  E -- 4  E --> F[Uplo S  F    E -- 4  E --> F[ API  |
+|  G -->rt  G --> H[Commi  |                  |    
+---
+
+<!-- ========n 
+-Tri
+ger workflt  
+< +--Tri
+ger workf& gerh Action -> S>+```mermaid
+sequenceDiagram
+    Udumsequenc---
+    User->>Git==    GitHub->>A          sequenceD|     Udumsequen      User->>Git== te<!-- ================    Syntroper-->>Action: Return image URL   t    Action->>Git: Commit & push
+```
+
+-el```
+
+---
+
+<!-- ===============em
+-{iagram blocks above cover:
+- *```
+
+-el```
+
+---
+
+<!-- =========uml, as
+---
+ **
+<agr-{
+ 
+< us<!-- MERMAID,  equence, class, use case, ASCII art
