@@ -51,28 +51,33 @@ This repo tests all supporte
 ---
 
 <!-- ===================== -->
-<!-- MERMAID: Flow
-    cla<!-- MERMAID: Flowchart     -po<!-- =============  +getImageUrl## 1   }
-    DiagramAction --> 
+<!-- MERMA()
+    }
+  
+<cla<!-- MERMAID: Flowchart     -po<!-- ===================== -->rl## 1. Merm   DiagramAction --> 
 ```mermaid
 graph TD
-  A[U---graph TD
-==  A[Use==  B --> C[Scan MarPLANTUML: Sequence     -->
+  A[U---graph TD===  A[Use==  B --> C[Scan Markdown]
+ : Seq  C --> D[-->
 <!-- ======  D --> E[Hash]
-  E -- 4  E --> F[Uplo S  F --> G[Rewrite README]
-  G -->rt  G --> H[Commit & Push]sh```
+  E -- 4  E --> F[Uplo S  F --> Giagram
 
----
-
-<!-- ========n 
+```plantuml
+@start  l
+Alice -> GitHub : Push``ommit
+GitHub -> Action 
 -Tri
-ger workflow
-Action -> Syntroper : <!-- ===================== -->ct## 2. Mermaid — Sequence Di -
+<er <!-- MERMAID: Sequence      -: <!-- ========m
+Syntroper --> Act## 2. Mermaidimage URL
+Action -
 ```mermaid
 sequenceDiagram
-    Udumsequenc---
-    User->>Git==    GitHub->>Action: Trigger  (    Action-  -->
-<!-- ================    Syntroper-->>Action: Return image URLase D    Action->>README: Rewrite with image
+    Uduml
+```
+
+---
+    User->>Git==    GitHub->>Action: Trigger  (    Action->>Syntroper: Upload diagr==    Syntroper-->>Action: Return image URL
+   D    Action->>README: Rewrite with image
  t    Action->>Git: Commit & push
 ```
 
@@ -80,60 +85,62 @@ sequenceDiagram
 
 ---
 
-<!-- ===============em
--{
+<!-- ======oper System
+ {
  
-< us<!-- MERMAID: General/Other -us<!-- ===================== -->  ## 3. Mermaid — Class Diagr3
+< us<!-- MERMAID: General/Other -us<!-- =========agrams" as UC2
+    usecase "Render Image" as UC3
 
 ```mermaid
 classDiagram
-    cl4
-}
-User --> UC4
-Develo    cl# Syn
+    cl# Syntrop-->classDiaglo    cl# Syn
 UThis repo tests all supporte   
 ---
 en---
 
 <!-- ======================
-<===<!-- MERMAID: Flow
-    cla<!-      cla<!-- MERMA==    DiagramAction --> 
-```meASCII — Architecture Overview
-
-```ascii
-+--------```mermaid
+<===<!-- MERMA()- ASCII: General       }
+  
+<c!-  
+<==<==```mermaid
 graph TD
- --graph TD
---  A[U--  ==  A[Use==  B --<!-- ======  D --> E[Hash]
-  E -- 4  E --> F[Uplo S  F    E -- 4  E --> F[ API  |
-|  G -->rt  G --> H[Commi  |                  |    
----
-
-<!-- ========n 
--Tri
-ger workflt  
-< +--Tri
-ger workf& gerh Action -> S>+```mermaid
+  A[U---graph TD===  A[Use==  B --> C[Scan Markdown]
+ : Seq  C --> D[-->
+<!----gra--------  A[U--   : Seq  C --> D[-->
+<!-- ======  D --> E[Hash]
+  E   <!-- ======  D -->    E -- 4  E --> F[Uplo S 
+|
+```plantuml
+@start  l
+Alice -> GitHub   @st |       Alice ->  GitHub ->|
+|  Push commit     -Tri
+<er <!-- ME& <erh Syntroper --> Act## 2. Mermaidimage URL
+Action -  Action -
+```mermaid
 sequenceDiagram
-    Udumsequenc---
-    User->>Git==    GitHub->>A          sequenceD|     Udumsequen      User->>Git== te<!-- ================    Syntroper-->>Action: Return image URL   t    Action->>Git: Commit & push
+    ```merm         |
+|     Uduml
+```
+  ```
+
+--- |
+-Rew  te   D    Action->>README: Rewrite with image
+ t    Action->>Git: Commit & push
 ```
 
 -el```
 
 ---
 
-<!-- ===============em
--{iagram blocks above cover:
-- *```
+<!-- ======oper System
+ {
+ 
+< F t    Action->>Git: Commit & push
+```
 
--el```
-
----
-
-<!-- =========uml, as
+-el **Engines**: mermaid, plantuml, puml, as
 ---
  **
-<agr-{
+<agr {
  
-< us<!-- MERMAID,  equence, class, use case, ASCII art
+< us<!-- MERMAID,  eque     class, use case, ASCII art
