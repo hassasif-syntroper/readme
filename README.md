@@ -1,9 +1,15 @@
 # Syntroper Diagram Test Suite
 
-Push 8 — testing OIDC auth
+Push 9 — testing OIDC auth
 
 ---
-
+```mermaid
+graph TD
+    A[Start] --> B{Is it working?}
+    B -->|Yes| C[Great!]
+    B -->|No| D[Debug]
+    D --> B
+```
 ## 1. Mermaid - Flowchart
 
 <!-- syntroper:start -->
