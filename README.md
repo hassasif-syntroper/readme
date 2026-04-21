@@ -1,13 +1,13 @@
 # Syntroper Diagram Test Suite
 
 Push 10 — testing OIDC auth
-```mermaid
-graph TD
-    A[Start] --> B{Is it working?}
-    B -->|Yes| C[Great!]
-    B -->|No| D[Debug]
-    D --> B
-```
+<!-- syntroper:start -->
+[![Diagram](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/d8c3f6c5-8538-4bce-a895-521f6043e2a3.png)](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/d8c3f6c5-8538-4bce-a895-521f6043e2a3.png)
+
+Open interactive version on Syntroper.
+Use the Syntroper browser extension for inline interactive mode.
+<!-- syntroper:diagram canonical=290c8a8ab550f1e48923dd888a90084f16ff654ccfe23ae1b76056e65469098f render=e66dea84716ce5e26916d8465e83e20945bf171aadef3b8d19cc60db76ed8998 id=d8c3f6c5-8538-4bce-a895-521f6043e2a3 engine=mermaid -->
+<!-- syntroper:end -->
 ---
 <!-- syntroper:start -->
 [![Diagram](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/d8c3f6c5-8538-4bce-a895-521f6043e2a3.png)](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/d8c3f6c5-8538-4bce-a895-521f6043e2a3.png)
