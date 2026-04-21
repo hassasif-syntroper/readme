@@ -1,6 +1,6 @@
 # Syntroper Diagram Test Suite
 
-Push 7 — testing OIDC auth
+Push 8 — testing OIDC auth
 
 ---
 
