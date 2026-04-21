@@ -1,6 +1,6 @@
 # Syntroper Diagram Test Suite
 
-Push 9 — testing OIDC auth
+Push 10 — testing OIDC auth
 ```mermaid
 graph TD
     A[Start] --> B{Is it working?}
