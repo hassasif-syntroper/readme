@@ -1,7 +1,13 @@
 # Syntroper Diagram Test Suite
 
 Push 9 — testing OIDC auth
-
+```mermaid
+graph TD
+    A[Start] --> B{Is it working?}
+    B -->|Yes| C[Great!]
+    B -->|No| D[Debug]
+    D --> B
+```
 ---
 <!-- syntroper:start -->
 [![Diagram](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/d8c3f6c5-8538-4bce-a895-521f6043e2a3.png)](https://snt-dev-media.s3.ap-southeast-2.amazonaws.com/external-embeds/d8c3f6c5-8538-4bce-a895-521f6043e2a3.png)
